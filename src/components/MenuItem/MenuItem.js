@@ -5,7 +5,7 @@ const MenuItem = props => {
     let itemClass = ['img'];
     itemClass.push(props.class);
     return (
-        <div className="item">
+        <div className="item" onClick={props.click}>
             <div className="itemInner">
                 <p>{props.name}</p>
                 <span>Price: {props.price} KGS</span>

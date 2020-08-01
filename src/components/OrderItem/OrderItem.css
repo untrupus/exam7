@@ -1,5 +1,4 @@
 .orderItem {
-    display: flex;
     justify-content: space-around;
     border: 1px solid black;
     border-radius: 3px;
@@ -20,3 +19,14 @@
     font-weight: bold;
 }
 
+.orderItem h3 {
+    /*flex-grow: 1;*/
+}
+
+.orderHide {
+    display: none;
+}
+
+.orderShow {
+    display: flex;
+}

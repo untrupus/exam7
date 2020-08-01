@@ -23,17 +23,50 @@ function App() {
         {name: 'Cola', price: 30, count: 0},
     ]);
 
+    const addItem = name => {
+        const index = order.findIndex(p => p.name === name);
+        const orderCopy = [...order];
+        const orderItem = {...orderCopy[index]};
+        orderItem.count++;
+        orderCopy[index] = orderItem;
+        setOrder(orderCopy);
+    }
 
+    const removeItem = name => {
+        const index = order.findIndex(p => p.name === name);
+        const orderCopy = [...order];
+        const orderItem = {...orderCopy[index]};
+        if (orderItem.count > 0) {
+            orderItem.count--;
+        }
+        orderCopy[index] = orderItem;
+        setOrder(orderCopy);
+    }
 
     let menu = menuItems.map((item) => {
         return (
             <MenuItem
+                key={item.name}
                 name={item.name}
                 price={item.price}
                 class={item.class}
+                click={() => addItem(item.name)}
             />
         )
     })
+
+    let orderDetails = order.map((orderItem) => {
+        return (
+            <OrderItem
+                key={orderItem.name}
+                name={orderItem.name}
+                count={orderItem.count}
+                price={orderItem.price}
+                click={() => removeItem(orderItem.name)}
+            />
+        )
+    });
+
   return (
     <div className="App">
         <div className="header">
@@ -42,7 +75,7 @@ function App() {
         </div>
 
         <div className="order">
-            <OrderItem/>
+            {orderDetails}
             <Price priceAmount={order}/>
         </div>
 
