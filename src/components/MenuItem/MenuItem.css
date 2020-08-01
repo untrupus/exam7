@@ -1,0 +1,56 @@
+.item {
+    width: 45%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.item p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.item span {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.img {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    margin: auto;
+}
+
+.hamburger {
+    background: url(../../icons/hamburger.jpeg);
+    background-size: contain;
+}
+
+.cheeseburger {
+    background: url(../../icons/cheeseburger.jpg);
+    background-size: contain;
+}
+
+.hotdog {
+    background: url(../../icons/hotdog.jpeg);
+    background-size: contain;
+}
+
+.water {
+    background: url(../../icons/water.png);
+    background-size: contain;
+}
+
+.cola {
+    background: url(../../icons/cola.jpeg);
+    background-size: contain;
+}
+
+.tea {
+    background: url(../../icons/tea.png);
+    background-size: contain;
+}

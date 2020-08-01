@@ -1,0 +1,22 @@
+.orderItem {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 5px;
+
+}
+
+.btn {
+    font-size: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.orderItem p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
