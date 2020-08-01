@@ -16,6 +16,7 @@
     border: 2px solid black;
     margin-bottom: 10px;
     border-radius: 5px;
+    background: azure;
 }
 
 .order {
@@ -23,6 +24,7 @@
     width: 49%;
     height: 500px;
     border-radius: 5px;
+    background: azure;
 }
 .items {
     border: 2px solid black;
@@ -32,4 +34,5 @@
     justify-content: space-around;
     flex-wrap: wrap;
     border-radius: 5px;
+    background: azure;
 }

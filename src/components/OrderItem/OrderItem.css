@@ -1,9 +1,11 @@
 .orderItem {
-    justify-content: space-around;
+    justify-content: space-between;
     border: 1px solid black;
     border-radius: 3px;
     margin: 5px;
-
+    background: white;
+    padding: 0 10px;
+    text-align: left;
 }
 
 .btn {
@@ -12,6 +14,7 @@
     background: none;
     outline: none;
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .orderItem p {
@@ -20,7 +23,7 @@
 }
 
 .orderItem h3 {
-    /*flex-grow: 1;*/
+    flex-grow: 1;
 }
 
 .orderHide {
@@ -29,4 +32,8 @@
 
 .orderShow {
     display: flex;
+}
+
+.orderPrice {
+    margin-left: 20px;
 }

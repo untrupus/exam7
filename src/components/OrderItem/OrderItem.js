@@ -13,7 +13,7 @@ const OrderItem = props => {
         <div className={orderClass.join(' ')}>
             <h3>{props.name}</h3>
             <p>x{props.count}</p>
-            <p>{props.price} KGS</p>
+            <p className="orderPrice">{props.price} KGS</p>
             <button type="button" className="btn" onClick={props.click}>&#10006;</button>
         </div>
     );

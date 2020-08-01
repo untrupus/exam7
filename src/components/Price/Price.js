@@ -6,8 +6,12 @@ const Price = props => {
         return acc + (item.count * item.price);
     }, 0);
 
+    let priceClass = ['price'];
+    if (totalPrice === 0) {
+        priceClass.push('priceHide');
+    }
     return (
-        <div className="price">
+        <div className={priceClass.join(' ')}>
             <p>Total price: {totalPrice} KGS</p>
         </div>
     );
