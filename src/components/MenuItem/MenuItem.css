@@ -8,6 +8,10 @@
     background: white;
 }
 
+.item:hover {
+    background: azure;
+}
+
 .item p {
     font-size: 20px;
     font-weight: bold;
@@ -27,7 +31,7 @@
 }
 
 .hamburger {
-    background: url(../../icons/hamburger.jpeg);
+    background: url(../../icons/hamburger.png);
     background-size: contain;
 }
 
@@ -37,7 +41,7 @@
 }
 
 .hotdog {
-    background: url(../../icons/hotdog.jpeg);
+    background: url(../../icons/hotdog.png);
     background-size: contain;
 }
 
@@ -47,7 +51,7 @@
 }
 
 .cola {
-    background: url(../../icons/cola.jpeg);
+    background: url(../../icons/cola.png);
     background-size: contain;
 }
 
